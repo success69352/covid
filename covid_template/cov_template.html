@@ -1,0 +1,85 @@
+<html>
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #8B008B;
+  border: none;
+  color: #FFFFFF ;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+
+<form action="covid" method="POST">
+  {% csrf_token %}
+<br><br><button class="button" id="Tamilnadu"><span>Tamilnadu </span></button><br>
+</form>
+<button class="button" name="Andaman and Nicobar Islands"><span>Andaman and Nicobar Islands </span></button><br>
+<button class="button" name="Andhra Pradesh"><span>Andhra Pradesh </span></button><br>
+<button class="button" name="Arunachal Pradesh"><span>Arunachal Pradesh </span></button><br>
+<button class="button" name="Assam"><span>Assam </span></button><br>
+<button class="button" name="Bihar"><span>Bihar </span></button><br>
+<button class="button" name="Chandigarh"><span>Chandigarh </span></button><br>
+<button class="button" name="Chhattisgarh"><span>Chhattisgarh </span></button><br>
+<button class="button" name="Delhi"><span>Delhi </span></button><br>
+<button class="button" name="Goa"><span>Goa </span></button><br>
+<button class="button" name="Gujarat"><span>Gujarat </span></button><br>
+<button class="button" name="Haryana"><span>Haryana </span></button><br>
+<button class="button" name="Himachal Pradesh"><span>Himachal Pradesh </span></button><br>
+<button class="button" name="Jammu and Kashmir"><span>Jammu and Kashmir </span></button><br>
+<button class="button" name="Jharkhand"><span>Jharkhand </span></button><br>
+<button class="button" name="Karnataka"><span>Karnataka </span></button><br>
+<button class="button" name="Kerala"><span>Kerala </span></button><br>
+<button class="button" name="Ladakh"><span>Ladakh </span></button><br>
+<button class="button" name="Madhya Pradesh"><span>Madhya Pradesh</span></button><br>
+<button class="button" name="Maharashtra"><span>Maharashtra </span></button><br>
+<button class="button" name="Manipur"><span>Manipur</span></button><br>
+<button class="button" name="Meghalaya"><span>Meghalaya </span></button><br>
+<button class="button" name="Mizoram"><span>Mizoram </span></button><br>
+<button class="button" name="Odisha"><span>Odisha </span></button><br>
+<button class="button" name="Puducherry"><span>Puducherry </span></button><br>
+<button class="button" name="Punjab"><span>Punjab </span></button><br>
+<button class="button" name="Rajasthan"><span>Rajasthan </span></button><br>
+<button class="button" name="Telengana"><span>Telengana </span></button><br>
+<button class="button" name="Tripura"><span>Tripura </span></button><br>
+<button class="button" name="Uttarakhand"><span>Uttarakhand </span></button><br>
+<button class="button" name="Uttar Pradesh"><span>Uttar Pradesh </span></button><br>
+<button class="button" name="West Bengal"><span>West Bengal </span></button><br>
+
+	</body>
+	</html>
